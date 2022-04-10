@@ -21,7 +21,7 @@ pipeline {
       parallel {
         stage('Test Automation') {
           steps {
-            bat ' parallel'
+            echo 'Test Automation'
           }
         }
 
