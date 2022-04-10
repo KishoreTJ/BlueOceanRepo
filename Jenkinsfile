@@ -5,7 +5,7 @@ pipeline {
       steps {
         git(url: 'https://github.com/KishoreTJ/WebApp.git', branch: 'master', poll: true)
         bat 'start /min stopApp.bat'
-        bat ' maven Maven'
+        bat ' maven C:\\apache-maven-3.8.5-bin\\apache-maven-3.8.5'
         bat 'mvn install'
         bat 'Set JENKINS_NODE_COOKIE=dontKillMe && start /min startApp.bat'
       }
