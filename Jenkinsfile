@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Tools') {
       steps {
-        bat ' maven "Maven"'
+        bat ' maven \'Maven'
         bat 'jdk "JDK"'
       }
     }
