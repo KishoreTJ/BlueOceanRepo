@@ -1,13 +1,6 @@
 pipeline {
   agent any
   stages {
-    stage('Tools') {
-      steps {
-        bat ' maven Maven'
-        bat 'jdk JDK'
-      }
-    }
-
     stage('\'Dev-Build') {
       steps {
         git(url: 'https://github.com/KishoreTJ/WebApp.git', branch: 'master', poll: true)
